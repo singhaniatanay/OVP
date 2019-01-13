@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavDrawer">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Let suppose we have:\n
+Congress = L\n
+Bhartiya Janta Party = E\n
+Aam Aadmi Party = R\n
+Bahujan Samaj Party = V\n
+
+Following are the security questions you were asked by, at the time of registration:\n
+What is your nick name? : 1\n
+Write name of any one state of India? : 2\n
+Pick any one number between 0-9. Write that number in words? : 3\n
+"
+                android:textAlignment="center"
+                android:id="@+id/Quetion"
+                android:fontFamily="@font/calibri"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Which question's answer of your consists the letter denoting your supporting party?"
+                android:textAlignment="center"
+                android:id="@+id/Question"
+                android:fontFamily="@font/calibri"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/one"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/two"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/three"/>
+</RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgrounddesign"
+                android:fontFamily="@font/calibri"
+                android:text="Submit"
+                android:id="@+id/submitquestion"
+                android:textAllCaps="false"
+                android:textColor="#96ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
